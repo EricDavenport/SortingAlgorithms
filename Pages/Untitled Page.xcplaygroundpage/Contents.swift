@@ -110,50 +110,50 @@ print(test1)
 // TODO: covert to generic
 
 // sorting one array - generic
-func genericMergeSort<T: Equatable >(arr: [T]) -> [T] {
-  // divide and conquer
-  // count is base case -
-  // obtain the middle index
-  // separate the array
-  // merge function -> generic
-  guard arr.count > 1 else {  // guard array is not empty
-    return arr  // return array as is if count is 1 or less
-  }
-  
-  // obtain middle index
-  let middleIndex = arr.count / 2 // arrays middle index
-  
-  // seperate array -> divide and con
-  let leftArray = genericMergeSort(arr: Array(arr[..<middleIndex]))
-  let rightArray = genericMergeSort(arr: Array(arr[middleIndex...]))
-  
-  return genericMerge(leftArray, rightArray)
-  
-}
+//func genericMergeSort<T: Equatable >(arr: [T]) -> [T] {
+//  // divide and conquer
+//  // count is base case -
+//  // obtain the middle index
+//  // separate the array
+//  // merge function -> generic
+//  guard arr.count > 1 else {  // guard array is not empty
+//    return arr  // return array as is if count is 1 or less
+//  }
+//
+//  // obtain middle index
+//  let middleIndex = arr.count / 2 // arrays middle index
+//
+//  // seperate array -> divide and con
+//  let leftArray = genericMergeSort(arr: Array(arr[..<middleIndex]))
+//  let rightArray = genericMergeSort(arr: Array(arr[middleIndex...]))
+//
+//  return genericMerge(leftArray, rightArray)
+//
+//}
 
-func genericMerge<T: Equatable>(_ leftArray: [T], _ rightArray: [T]) -> [T] {
-  let resultsArray = [T]()
-  var leftIndex = 0
-  var rightIndex = 0
-  
-  while leftIndex < leftArray.count && rightIndex < rightArray.count {
-    // obtain elements using the index variable
-    let leftElement = leftArray[leftIndex]
-    let rightElement = rightArray[rightIndex]
-    
-    if leftElement < rightElement {
-      
-      
-    } else if rightElement < leftElement {
-      
-    } else { // both element equal left == right
-      
-    }
-    
-    
-    
-  }
-  
-  
-  return resultsArray
-}
+//func genericMerge<T: Equatable>(_ leftArray: [T], _ rightArray: [T]) -> [T] {
+//  let resultsArray = [T]()
+//  var leftIndex = 0
+//  var rightIndex = 0
+//
+//  while leftIndex < leftArray.count && rightIndex < rightArray.count {
+//    // obtain elements using the index variable
+//    let leftElement = leftArray[leftIndex]
+//    let rightElement = rightArray[rightIndex]
+//
+//    if leftElement < rightElement {
+//
+//
+//    } else if rightElement < leftElement {
+//
+//    } else { // both element equal left == right
+//
+//    }
+//
+//
+//
+//  }
+//
+//
+//  return resultsArray
+//}
